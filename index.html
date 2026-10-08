@@ -8,7 +8,7 @@
     <button id="andromeda">Modelos de Andromeda</button>
     <button id="alex1">ALEX</button>
 
-    <p id="respuestamodelo"></p>
+    <p id="nada"></p>
 
     
   </body>
@@ -20,18 +20,17 @@
 
   let respuestamodelo = ""; atlasbutton.addEventListener ("click",function() {
     modelo = "Atlas IA";
-    respuestamodelo.textContent = 
-    "Cargando:" + modelo
+    nada.textContent = "Cargando:" + modelo;
 
 
   });
   andromeda.addEventListener("click", function() {
     modelo = "Modelos de Andromeda";
-    respuestamodelo.textContent = "Cargando:" + modelo;
+    nada.textContent = "Cargando:" + modelo;
   });
 
   alex1.addEventListener("click", function() {
     modelo = "ALEX";
-    respuestamodelo.textContent = "Cargando:" + modelo;
+    nada.textContent = "Cargando:" + modelo;
   });
 </script>
