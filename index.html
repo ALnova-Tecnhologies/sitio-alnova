@@ -6,7 +6,7 @@
 
     <button id="atlasbutton">Atlas IA</button>
     <button id="andromeda">Modelos de Andromeda</button>
-    <button id="ALEX">ALEX</button>
+    <button id="alex1">ALEX</button>
 
     <p id="respuestamodelo"></p>
 
@@ -14,7 +14,9 @@
   </body>
 </html>
 <script>
-  let modelo = document.getElementById("Atlas IA")
+  let atlasbutton = document.getElementById("Atlas IA")
+  let andromeda = document.getElementById("Modelos de Andromeda")
+  let alex1 = document.getElementById("ALEX")
 
   let respuesta = ""; atlasbutton.addEventListener ("click",function() {
     modelo = "Atlas IA";
@@ -22,5 +24,14 @@
     "Cargando:" + modelo
 
 
+  });
+  andromeda.addEventListener("click", function() {
+    modelo = "Modelos de Andromeda";
+    respuestamodelo.textContent = "Cargando:" + modelo;
+  });
+
+  alex1.addEventListener("click", function() {
+    modelo = "ALEX";
+    respuestamodelo.textContent = "Cargando:" + modelo;
   });
 </script>
